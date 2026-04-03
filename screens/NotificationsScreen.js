@@ -8,7 +8,7 @@ const NOTIFICATIONS = [
   {
     id: '1',
     avatar: 'https://i.pravatar.cc/150?img=1',
-    name: 'Alice Johnson',
+    name: 'Thabo Monamane',
     action: 'liked your post.',
     time: '2m ago',
     read: false,
@@ -18,7 +18,7 @@ const NOTIFICATIONS = [
   {
     id: '2',
     avatar: 'https://i.pravatar.cc/150?img=2',
-    name: 'Bob Smith',
+    name: 'Likopo Dooda',
     action: 'commented on your photo.',
     time: '15m ago',
     read: false,
@@ -28,7 +28,7 @@ const NOTIFICATIONS = [
   {
     id: '3',
     avatar: 'https://i.pravatar.cc/150?img=3',
-    name: 'Carol Williams',
+    name: 'Khotso Lekoala',
     action: 'sent you a friend request.',
     time: '1h ago',
     read: false,
@@ -38,7 +38,7 @@ const NOTIFICATIONS = [
   {
     id: '4',
     avatar: 'https://i.pravatar.cc/150?img=4',
-    name: 'David Lee',
+    name: 'Thabo Tlou',
     action: 'shared your post.',
     time: '3h ago',
     read: true,
@@ -48,7 +48,7 @@ const NOTIFICATIONS = [
   {
     id: '5',
     avatar: 'https://i.pravatar.cc/150?img=5',
-    name: 'Emma Davis',
+    name: 'Thato Chelane',
     action: 'tagged you in a photo.',
     time: '5h ago',
     read: true,
@@ -58,8 +58,8 @@ const NOTIFICATIONS = [
   {
     id: '6',
     avatar: 'https://i.pravatar.cc/150?img=6',
-    name: 'Frank Wilson',
-    action: 'reacted ❤️ to your comment.',
+    name: 'Refiloe Naleli',
+    action: 'reacted to your comment.',
     time: 'Yesterday',
     read: true,
     icon: 'heart',
@@ -111,93 +111,37 @@ export default function NotificationsScreen() {
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#F2F2F7',
+  screen: { flex: 1, backgroundColor: '#F2F2F7',
   },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingBottom: 10,
-    paddingTop: 8,
-    backgroundColor: '#ffffff',
-    borderBottomWidth: 1,
-    borderBottomColor: '#F2F2F7',
+  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 16, paddingBottom: 10, paddingTop: 8, backgroundColor: '#ffffff', borderBottomWidth: 1, borderBottomColor: '#F2F2F7',
   },
   headerTitle: {
     fontSize: 26,
     fontWeight: '800',
     color: '#1C1C1E',
   },
-  filterButton: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: '#E8F0FE',
-    justifyContent: 'center',
-    alignItems: 'center',
+  filterButton: { width: 36, height: 36, borderRadius: 18, backgroundColor: '#E8F0FE', justifyContent: 'center', alignItems: 'center',
   },
-  sectionLabel: {
-    fontSize: 18,
-    fontWeight: '700',
-    color: '#1C1C1E',
-    paddingHorizontal: 16,
-    paddingTop: 14,
-    paddingBottom: 6,
+  sectionLabel: { fontSize: 18, fontWeight: '700', color: '#1C1C1E', paddingHorizontal: 16, paddingTop: 14, paddingBottom: 6,
   },
-  notifRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#ffffff',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    marginBottom: 1,
-    gap: 12,
+  notifRow: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#ffffff', paddingHorizontal: 16, paddingVertical: 12, marginBottom: 1, gap: 12,
   },
-  unreadRow: {
-    backgroundColor: '#EEF3FE',
+  unreadRow: { backgroundColor: '#EEF3FE',
   },
-  avatarWrapper: {
-    position: 'relative',
+  avatarWrapper: { position: 'relative',
   },
-  actionIcon: {
-    position: 'absolute',
-    bottom: -2,
-    right: -2,
-    width: 22,
-    height: 22,
-    borderRadius: 11,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#fff',
+  actionIcon: { position: 'absolute', bottom: -2, right: -2, width: 22, height: 22, borderRadius: 11, justifyContent: 'center', alignItems: 'center', borderWidth: 2, borderColor: '#fff',
   },
-  notifContent: {
-    flex: 1,
+  notifContent: { flex: 1,
   },
-  notifText: {
-    fontSize: 14,
-    color: '#1C1C1E',
-    lineHeight: 20,
+  notifText: { fontSize: 14, color: '#1C1C1E', lineHeight: 20,
   },
-  notifName: {
-    fontWeight: '700',
+  notifName: { fontWeight: '700',
   },
-  notifTime: {
-    fontSize: 12,
-    color: '#8E8E93',
-    marginTop: 3,
+  notifTime: { fontSize: 12, color: '#8E8E93', marginTop: 3,
   },
-  unreadTime: {
-    color: '#1877F2',
-    fontWeight: '600',
+  unreadTime: { color: '#1877F2', fontWeight: '600',
   },
-  unreadDot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    backgroundColor: '#1877F2',
+  unreadDot: { width: 10, height: 10, borderRadius: 5, backgroundColor: '#1877F2',
   },
 });
