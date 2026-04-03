@@ -52,7 +52,7 @@ function ProfileHeader() {
       
       <View style={styles.userInfoBlock}>
         <Text style={styles.profileName}>Khothatso Maiketso</Text>
-        <Text style={styles.profileBio}>Software Engineer · Loves novels & coffee ☕</Text>
+        <Text style={styles.profileBio}>Software Engineer · Loves novels & coffee</Text>
         <View style={styles.statsRow}>
           <View style={styles.stat}>
             <Text style={styles.statNumber}>248</Text>
