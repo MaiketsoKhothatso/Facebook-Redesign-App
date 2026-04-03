@@ -25,30 +25,14 @@ export default function Avatar({ uri, size = 44, initials = 'U', showOnline = fa
 }
 
 const styles = StyleSheet.create({
-  container: {
-    position: 'relative',
+  container: { position: 'relative',
   },
-  image: {
-    resizeMode: 'cover',
+  image: { resizeMode: 'cover',
   },
-  placeholder: {
-    backgroundColor: '#1877F2',
-    justifyContent: 'center',
-    alignItems: 'center',
+  placeholder: { backgroundColor: '#1877F2', justifyContent: 'center', alignItems: 'center',
   },
-  initials: {
-    color: '#ffffff',
-    fontWeight: '700',
+  initials: { color: '#ffffff', fontWeight: '700',
   },
-  onlineDot: {
-    position: 'absolute',
-    bottom: 1,
-    right: 1,
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-    backgroundColor: '#42B883',
-    borderWidth: 2,
-    borderColor: '#ffffff',
+  onlineDot: { position: 'absolute', bottom: 1, right: 1, width: 12, height: 12, borderRadius: 6, backgroundColor: '#42B883', borderWidth: 2, borderColor: '#ffffff',
   },
 });
