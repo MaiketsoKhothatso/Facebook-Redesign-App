@@ -50,8 +50,7 @@ export default function AddPostScreen() {
             </TouchableOpacity>
           </View>
         </View>
-
-        
+ 
         <TextInput
           style={styles.textInput}
           multiline
