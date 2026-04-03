@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,
-  FlatList,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
+import { View, FlatList, ScrollView, Text, TouchableOpacity, StyleSheet,} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Navbar from '../components/Navbar';
 import StoryItem from '../components/StoryItem';
@@ -15,21 +8,21 @@ import Avatar from '../components/Avatar';
 
 const STORIES = [
   { id: '0', isAddStory: true },
-  { id: '1', name: 'Alice', avatar: 'https://i.pravatar.cc/150?img=1', seen: false },
-  { id: '2', name: 'Bob', avatar: 'https://i.pravatar.cc/150?img=2', seen: false },
-  { id: '3', name: 'Carol', avatar: 'https://i.pravatar.cc/150?img=3', seen: true },
-  { id: '4', name: 'David', avatar: 'https://i.pravatar.cc/150?img=4', seen: false },
-  { id: '5', name: 'Emma', avatar: 'https://i.pravatar.cc/150?img=5', seen: true },
-  { id: '6', name: 'Frank', avatar: 'https://i.pravatar.cc/150?img=6', seen: false },
+  { id: '1', name: 'Thabo', avatar: 'https://i.pravatar.cc/150?img=1', seen: false },
+  { id: '2', name: 'Likopo', avatar: 'https://i.pravatar.cc/150?img=2', seen: false },
+  { id: '3', name: 'Khotso', avatar: 'https://i.pravatar.cc/150?img=3', seen: true },
+  { id: '4', name: 'Thabo', avatar: 'https://i.pravatar.cc/150?img=4', seen: false },
+  { id: '5', name: 'Thato', avatar: 'https://i.pravatar.cc/150?img=5', seen: true },
+  { id: '6', name: 'Refiloe', avatar: 'https://i.pravatar.cc/150?img=6', seen: false },
 ];
 
 const POSTS = [
   {
     id: '1',
-    userName: 'Alice Johnson',
+    userName: 'Thabo Monamane',
     userAvatar: 'https://i.pravatar.cc/150?img=1',
-    timestamp: '2 hours ago · 🌍',
-    content: 'Just finished an amazing hike this morning! Nature is truly the best reset for the mind. 🌿',
+    timestamp: '2 hours ago',
+    content: 'Just finished an amazing scam this morning! Hustling is truly the best reset for the mind',
     image: 'https://picsum.photos/seed/hike/600/400',
     likes: 128,
     comments: 24,
@@ -38,10 +31,10 @@ const POSTS = [
   },
   {
     id: '2',
-    userName: 'Bob Smith',
+    userName: 'Likopo Dooda',
     userAvatar: 'https://i.pravatar.cc/150?img=2',
-    timestamp: '4 hours ago · 👥',
-    content: 'Worked on a new project today. The future of mobile development is looking incredibly bright! 🚀 React Native forever!',
+    timestamp: '4 hours ago',
+    content: 'Worked on a new project today. The future of mobile development is looking bleak, people cant code anymore',
     image: null,
     likes: 56,
     comments: 12,
@@ -50,10 +43,10 @@ const POSTS = [
   },
   {
     id: '3',
-    userName: 'Carol Williams',
+    userName: 'Khotso Lekoala',
     userAvatar: 'https://i.pravatar.cc/150?img=3',
     timestamp: 'Yesterday at 6:30 PM',
-    content: 'Weekend vibes 🌅',
+    content: 'Weekend vibes',
     image: 'https://picsum.photos/seed/sunset/600/400',
     likes: 342,
     comments: 47,
@@ -62,10 +55,10 @@ const POSTS = [
   },
   {
     id: '4',
-    userName: 'David Lee',
+    userName: 'Thabo Tlou',
     userAvatar: 'https://i.pravatar.cc/150?img=4',
     timestamp: 'Yesterday at 2:00 PM',
-    content: "Coffee, code, and good vibes. That's all I need on a Monday morning. ☕💻",
+    content: "Coffee, code, and good vibes. That's all I need on a Monday morning.",
     image: 'https://picsum.photos/seed/coffee/600/400',
     likes: 89,
     comments: 15,
@@ -74,10 +67,10 @@ const POSTS = [
   },
   {
     id: '5',
-    userName: 'Emma Davis',
+    userName: 'Thato Chelane',
     userAvatar: 'https://i.pravatar.cc/150?img=5',
     timestamp: '2 days ago',
-    content: 'Exploring new places makes life feel limitless. Can\'t wait to share more of this adventure!',
+    content: 'Did you know that if you climb a mountain at night, you can see ghosts?',
     image: 'https://picsum.photos/seed/travel/600/400',
     likes: 215,
     comments: 38,
@@ -159,69 +152,30 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#F2F2F7',
+  screen: { flex: 1, backgroundColor: '#F2F2F7',
   },
-  feed: {
-    flex: 1,
+  feed: { flex: 1,
   },
-  separator: {
-    height: 0,
+  separator: { height: 0,
   },
-  storiesContainer: {
-    backgroundColor: '#ffffff',
-    paddingVertical: 14,
-    borderBottomWidth: 1,
-    borderBottomColor: '#F2F2F7',
+  storiesContainer: { backgroundColor: '#ffffff', paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: '#F2F2F7',
   },
-  storiesScroll: {
-    paddingHorizontal: 16,
+  storiesScroll: { paddingHorizontal: 16,
   },
-  createPostCard: {
-    backgroundColor: '#ffffff',
-    marginBottom: 8,
+  createPostCard: { backgroundColor: '#ffffff', marginBottom: 8,
   },
-  createPostTop: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingTop: 12,
-    paddingBottom: 10,
-    gap: 10,
+  createPostTop: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingTop: 12, paddingBottom: 10, gap: 10,
   },
-  createPostInput: {
-    flex: 1,
-    height: 40,
-    backgroundColor: '#F2F2F7',
-    borderRadius: 20,
-    justifyContent: 'center',
-    paddingHorizontal: 16,
+  createPostInput: { flex: 1, height: 40, backgroundColor: '#F2F2F7', borderRadius: 20, justifyContent: 'center', paddingHorizontal: 16,
   },
-  createPostPlaceholder: {
-    color: '#8E8E93',
-    fontSize: 15,
+  createPostPlaceholder: { color: '#8E8E93', fontSize: 15,
   },
-  createPostDivider: {
-    height: 1,
-    backgroundColor: '#F2F2F7',
-    marginHorizontal: 16,
+  createPostDivider: { height: 1, backgroundColor: '#F2F2F7', marginHorizontal: 16,
   },
-  createPostActions: {
-    flexDirection: 'row',
-    paddingVertical: 6,
+  createPostActions: { flexDirection: 'row', paddingVertical: 6,
   },
-  createPostAction: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 8,
-    gap: 6,
+  createPostAction: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', paddingVertical: 8, gap: 6,
   },
-  createPostActionLabel: {
-    fontSize: 13,
-    fontWeight: '600',
-    color: '#1C1C1E',
+  createPostActionLabel: { fontSize: 13, fontWeight: '600', color: '#1C1C1E',
   },
 });
