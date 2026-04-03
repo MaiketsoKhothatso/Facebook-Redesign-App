@@ -63,35 +63,10 @@ export default function AppNavigator() {
 }
 
 const styles = StyleSheet.create({
-  tabBar: {
-    height: 64,
-    backgroundColor: '#ffffff',
-    borderTopWidth: 1,
-    borderTopColor: '#E8E8E8',
-    paddingBottom: 8,
-    paddingTop: 8,
-    elevation: 10,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: -3 },
-    shadowOpacity: 0.06,
-    shadowRadius: 8,
+  tabBar: { height: 64, backgroundColor: '#ffffff', borderTopWidth: 1, borderTopColor: '#E8E8E8', paddingBottom: 8, paddingTop: 8, elevation: 10, shadowColor: '#000', shadowOffset: { width: 0, height: -3 }, shadowOpacity: 0.06, shadowRadius: 8,
   },
-  addButton: {
-    top: -16,
-    justifyContent: 'center',
-    alignItems: 'center',
+  addButton: { top: -16, justifyContent: 'center', alignItems: 'center',
   },
-  addButtonInner: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    backgroundColor: '#1877F2',
-    justifyContent: 'center',
-    alignItems: 'center',
-    elevation: 6,
-    shadowColor: '#1877F2',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
-    shadowRadius: 8,
+  addButtonInner: { width: 56, height: 56, borderRadius: 28, backgroundColor: '#1877F2', justifyContent: 'center', alignItems: 'center', elevation: 6, shadowColor: '#1877F2', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.4, shadowRadius: 8,
   },
 });
