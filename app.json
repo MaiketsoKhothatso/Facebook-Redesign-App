@@ -4,6 +4,12 @@
       "eas": {
         "projectId": "ff5ea259-0b0b-4f2a-9674-45e9b2c7604f"
       }
-    }
+    },
+    "android": {
+      "package": "com.maiketso112233.facebookredesign"
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
